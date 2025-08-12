@@ -200,7 +200,7 @@ class SignupScreen extends StatelessWidget {
                 ),
                 LoginButton(
                   text: "Register",
-                  textColor: whiteColor,
+                  textColor: primaryColor,
                   boxColor: blackColor,
                 ),
                 Padding(
