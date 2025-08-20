@@ -109,8 +109,8 @@ class SignupScreen extends StatelessWidget {
                         width: 17,
                       ),
                     ),
-                    helperText: "password helper",
-                    labelText: "password label",
+                    helperText: "Email helper",
+                    labelText: "Email label",
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(8),
                     ),
@@ -200,7 +200,7 @@ class SignupScreen extends StatelessWidget {
                 ),
                 LoginButton(
                   text: "Register",
-                  textColor: primaryColor,
+                  textColor: whiteColor,
                   boxColor: blackColor,
                 ),
                 Padding(
