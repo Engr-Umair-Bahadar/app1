@@ -4,6 +4,8 @@ import 'package:myapp/core/costant/colors.dart';
 import 'package:myapp/core/costant/text_style.dart';
 
 class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

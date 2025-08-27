@@ -3,6 +3,8 @@ import 'package:myapp/core/costant/colors.dart';
 import 'package:myapp/core/costant/strings.dart';
 
 class PracticeScreen extends StatelessWidget {
+  const PracticeScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

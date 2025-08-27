@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/ui/home_screen.dart';
+import 'package:myapp/ui/screens/auth/category_screen.dart';
+import 'package:myapp/ui/screens/auth/root_screen.dart';
 import 'package:myapp/ui/screens/discount_screen.dart';
-import 'package:myapp/ui/screens/practice_screen.dart';
-import 'package:myapp/ui/screens/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: DiscountScreen(),
+      home: RootScreen(),
     );
   }
 }

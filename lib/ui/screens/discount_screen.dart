@@ -11,8 +11,60 @@ class DiscountScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Discount Screen")),
-      body: Column(children: [DiscountCard()]),
+      body: Column(
+        children: [
+          Stack(
+            alignment: Alignment.center,
+            children: [
+              Image.asset(
+                "$staticAssets/ellipse.png",
+                fit: BoxFit.fill,
+                height: 100,
+                width: double.infinity,
+              ),
+
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  children: [
+                    Image.asset("$staticAssets/app_logo.png", scale: 9.5),
+                    Expanded(
+                      child: TextFormField(
+                        decoration: InputDecoration(
+                          hintText: "Search",
+                          fillColor: whiteColor,
+                          prefixIcon: Icon(Icons.search, color: blackColor),
+                          filled: true,
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(16),
+                            borderSide: BorderSide(width: 1, color: whiteColor),
+                          ),
+                        ),
+                      ),
+                    ),
+                    Icon(Icons.notifications_none),
+                  ],
+                ),
+              ),
+            ],
+          ),
+          Expanded(
+            child: ListView.builder(
+              shrinkWrap: true,
+              itemCount: 8,
+              itemBuilder: (BuildContext context, int index) {
+                return Padding(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 10,
+                    vertical: 10,
+                  ),
+                  child: DiscountCard(),
+                );
+              },
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
