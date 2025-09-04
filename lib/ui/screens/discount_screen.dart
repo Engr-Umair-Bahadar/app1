@@ -1,6 +1,7 @@
 // ignore_for_file: deprecated_member_use
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/core/costant/colors.dart';
 import 'package:myapp/core/costant/strings.dart';
 import 'package:myapp/core/costant/text_style.dart';
@@ -103,8 +104,16 @@ class DiscountCard extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
+                  //google fonts//
                   "All The Restaurants",
-                  style: style16B.copyWith(color: whiteColor),
+                  style: GoogleFonts.aDLaMDisplay(
+                    textStyle: TextStyle(
+                      color: whiteColor,
+                      fontWeight: FontWeight.w900,
+                      fontSize: 30,
+                    ),
+                  ),
+                  // style: style16B.copyWith(color: whiteColor),
                 ),
                 Text(
                   "Discount",

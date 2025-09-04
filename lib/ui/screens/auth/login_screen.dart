@@ -18,7 +18,7 @@ class LoginScreen extends StatefulWidget {
 
 class _LoginScreenState extends State<LoginScreen> {
   bool isSelect = false;
-  onClick() {
+  void onClick() {
     setState(() {
       isSelect = !isSelect;
     });

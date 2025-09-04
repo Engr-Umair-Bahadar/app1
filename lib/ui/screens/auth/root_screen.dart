@@ -1,14 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/core/costant/colors.dart';
+import 'package:myapp/ui/home_screen.dart';
+import 'package:myapp/ui/screens/auth/category_screen.dart';
+import 'package:myapp/ui/screens/discount_screen.dart';
 
 class RootScreen extends StatefulWidget {
+  const RootScreen({super.key});
+
   @override
   State<RootScreen> createState() => _RootScreenState();
 }
 
 class _RootScreenState extends State<RootScreen> {
   int selectedIndex = 0;
-  List<Widget> screens = [Text("Home"), Text("Search"), Text("Profile")];
+  List<Widget> screens = [CategoryScreen(), DiscountScreen(), HomeScreen()];
 
   @override
   Widget build(BuildContext context) {

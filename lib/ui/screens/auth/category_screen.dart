@@ -3,6 +3,8 @@ import 'package:myapp/core/costant/colors.dart';
 import 'package:myapp/core/costant/strings.dart';
 
 class CategoryScreen extends StatelessWidget {
+  const CategoryScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,7 +28,7 @@ class CategoryScreen extends StatelessWidget {
                     Expanded(
                       child: TextFormField(
                         decoration: InputDecoration(
-                          hintText: "Search here",
+                          hintText: "Search",
                           fillColor: whiteColor,
                           prefixIcon: Icon(Icons.search, color: blackColor),
                           filled: true,
@@ -46,7 +48,7 @@ class CategoryScreen extends StatelessWidget {
 
           Container(
             clipBehavior: Clip.none,
-            width: 168,
+            width: 180,
             height: 183,
             decoration: BoxDecoration(
               color: primaryColor,
@@ -63,15 +65,16 @@ class CategoryScreen extends StatelessWidget {
                     topRight: Radius.circular(10),
                   ),
                   child: Image.asset(
-                    height: 131,
+                    height: 120,
                     width: double.infinity,
                     "$staticAssets/sardar.png",
+
                     fit: BoxFit.cover,
                   ),
                 ),
                 Row(
                   children: [
-                    Text('Sardar Ji Cottrelle Blvd'),
+                    Text('Sardar Ji Cottrelle Blvd '),
                     Image.asset("$staticAssets/pic.png"),
                   ],
                 ),
